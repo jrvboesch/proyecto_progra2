@@ -11,8 +11,28 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Name" />
+
+        <EditText
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Bob123"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
 
         <EditText
             android:id="@+id/txtName"
@@ -24,6 +44,12 @@
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="73dp" />
 
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
         <EditText
             android:id="@+id/txtEmail"
             android:layout_width="356dp"
@@ -33,6 +59,12 @@
             android:inputType="textEmailAddress"
             tools:layout_editor_absoluteX="14dp"
             tools:layout_editor_absoluteY="132dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password" />
 
         <EditText
             android:id="@+id/txtPassword"
@@ -44,6 +76,12 @@
             tools:layout_editor_absoluteX="15dp"
             tools:layout_editor_absoluteY="194dp" />
 
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password" />
+
         <EditText
             android:id="@+id/txtconfirm"
             android:layout_width="353dp"
@@ -53,6 +91,20 @@
             android:inputType="textPassword"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="256dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age" />
+
+        <EditText
+            android:id="@+id/txtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="99"
+            android:inputType="number" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,6 +116,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="52dp"
                 android:layout_weight="1"
+                android:onClick="register"
                 android:text="Register"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="415dp" />

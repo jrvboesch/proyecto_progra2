@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto;
+package com.example.juan.proyecto;
 
 import java.util.*;
 
@@ -13,8 +13,8 @@ import java.util.*;
  */
 public class Contenido extends User implements UserEvents{
      ArrayList<Integer> events;
-    public Contenido( int id, String user, String name, String password, int age, String email ){
-        super( id, user, name, password, age, email, false, UserType.CONTENIDO );
+    public Contenido( int id, String user, String name, String password, int age, String email, boolean active ){
+        super( id, user, name, password, age, email, active, UserType.CONTENIDO );
         this.events = new ArrayList<>();
     };
     public Contenido( String user, String name, String password, int age, String email ){
